@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IMPCORE Records - Electronic Music Label Website
 
-## Getting Started
+Un sitio web moderno y minimalista para un sello discográfico de música electrónica, construido con Next.js, TypeScript y Tailwind CSS.
 
-First, run the development server:
+## 🎵 Características
+
+- **Diseño Dark & Minimalista**: Inspirado en mutual-rytm.com
+- **Reproductor Global**: Música persistente entre páginas
+- **Totalmente Responsivo**: Optimizado para todos los dispositivos
+- **Performance Optimizada**: ISR, optimización de imágenes y Core Web Vitals
+- **CMS Ready**: Preparado para integración con Sanity/Contentful
+- **SEO Optimizado**: Metadatos dinámicos y estructura semántica
+
+## 🛠️ Tecnologías
+
+- **Framework**: Next.js 15 (App Router)
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS
+- **Estado Global**: Zustand
+- **Animaciones**: Framer Motion
+- **Iconos**: Lucide React
+- **Deployment**: Vercel Ready
+
+## 🚀 Instalación y Uso
+
+### Prerrequisitos
+- Node.js 18+ 
+- npm, pnpm, yarn o bun
+
+### Instalación
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construir para producción
+npm run build
+
+# Ejecutar en producción
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Scripts Disponibles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run dev          # Modo desarrollo
+npm run build        # Construir para producción
+npm run start        # Ejecutar en producción
+npm run lint         # Linter ESLint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura del Proyecto
 
-## Learn More
+```
+src/
+├── app/                 # App Router (Next.js 13+)
+│   ├── layout.tsx      # Layout principal
+│   ├── page.tsx        # Página de inicio
+│   ├── releases/       # Páginas de lanzamientos
+│   ├── artists/        # Páginas de artistas
+│   └── globals.css     # Estilos globales
+├── components/         # Componentes reutilizables
+│   ├── ui/            # Componentes UI base
+│   ├── Header.tsx     # Navegación principal
+│   ├── Footer.tsx     # Pie de página
+│   ├── MusicPlayer.tsx # Reproductor global
+│   └── ReleaseCard.tsx # Tarjeta de lanzamiento
+├── store/             # Estado global (Zustand)
+├── types/             # Tipos TypeScript
+├── lib/               # Utilidades
+└── styles/            # Estilos adicionales
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Guía de Diseño
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Paleta de Colores
+- **Fondo Principal**: `#111111` (Negro casi puro)
+- **Texto Principal**: `#F5F5F5` (Blanco roto)
+- **Acento Principal**: `#0066FF` (Azul eléctrico)
+- **Acento Secundario**: `#FF3366` (Rojo intenso)
+- **Cards**: `#1A1A1A` / `#222222` (hover)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Tipografía
+- **Fuente Principal**: Inter (Google Fonts)
+- **Estilo**: Sans-serif moderno y limpio
+- **Tracking**: Generoso en encabezados para look "de diseño"
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Vercel (Recomendado)
+```bash
+npm i -g vercel
+vercel
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+**IMPCORE Records** - Pushing the boundaries of electronic music 🎵
